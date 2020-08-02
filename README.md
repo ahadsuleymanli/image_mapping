@@ -13,3 +13,7 @@ returns the coordinates of the location it was cropped out of.
 
 #### Build
 ```./compile_and_run.sh```
+
+#### Implementation
+Matches are done through rotating the template image by 1 degree increments and using cv::matchTemplate function to find a match. 
+The original coordinates are calculated after a match is made.
